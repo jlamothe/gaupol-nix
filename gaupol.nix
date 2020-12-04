@@ -17,10 +17,11 @@ python.buildPythonApplication {
     rev = "83a5362506e71f11d64058b02e73b09e0975e1ca";
   };
 
+  nativeBuildInputs = [ gettext ];
+
   propagatedBuildInputs = [
     pygobject
     gtk3
-    gettext
     gstreamer
     gspell
     isocodes
